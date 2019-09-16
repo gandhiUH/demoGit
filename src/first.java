@@ -8,7 +8,8 @@ public class first {
         Scanner input = new Scanner(System.in); //scanner object to read data from keyboard String choice="yes";
         System.out.println("Enter a file name for output");
         fname=input.nextLine();
-        PrintWriter outfile = new PrintWriter(fname);
+        FileWriter fwriter= new FileWriter(fname,true);
+        PrintWriter outfile = new PrintWriter(fwriter);
         String name;
         String choice="yes";
 
