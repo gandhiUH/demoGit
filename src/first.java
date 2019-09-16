@@ -2,8 +2,13 @@ import java.io.*;
 import java.util.Scanner;
 public class first {
     public static void main(String[] args) throws IOException { // PrintWriter outfile=new PrintWriter("namefile.txt"); //file will be created in the current folder in which the project is created
-        PrintWriter outfile = new PrintWriter("/Users/gandhi/Desktop/namefile.txt"); //file will be created in the specified path //file is created or opened
+        String fname;
+
+        //PrintWriter outfile = new PrintWriter("/Users/gandhi/Desktop/namefile.txt"); //file will be created in the specified path //file is created or opened
         Scanner input = new Scanner(System.in); //scanner object to read data from keyboard String choice="yes";
+        System.out.println("Enter a file name for output");
+        fname=input.nextLine();
+        PrintWriter outfile = new PrintWriter(fname);
         String name;
         String choice="yes";
 
